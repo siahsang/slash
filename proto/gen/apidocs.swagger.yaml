@@ -452,7 +452,7 @@ paths:
       tags:
         - UserService
   /api/v1/users/{id}:
-    get:
+      get:
       summary: GetUser returns a user by id.
       operationId: UserService_GetUser
       responses:

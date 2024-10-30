@@ -107,7 +107,7 @@ func (s *Store) Migrate(ctx context.Context) error {
 	} else if s.profile.Mode == "demo" {
 		// In demo mode, we should seed the database.
 		if err := s.seed(ctx); err != nil {
-			return errors.Wrap(err, "failed to seed")
+			errors.Wrap(err, "failed to seed")
 		}
 	}
 
