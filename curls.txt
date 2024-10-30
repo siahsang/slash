@@ -1,0 +1,10 @@
+// get information about the specified user id
+
+curl --location 'http://localhost:8082/api/v1/users/102' \
+--header 'accept: application/json' \
+--header 'Cookie: slash.access-token=eyJhbGciOiJIUzI1NiIsImtpZCI6InYxIiwidHlwIjoiSldUIn0.eyJuYW1lIjoic3RldmVuQHlvdXJzZWxmaG9zdGVkLmNvbSIsImlzcyI6InNsYXNoIiwic3ViIjoiMTAyIiwiYXVkIjpbInVzZXIuYWNjZXNzLXRva2VuIl0sImV4cCI6MTczMDc4MTMxOSwiaWF0IjoxNzMwMTc2NTE5fQ.DbmUFu2Rlbk4dE7Zj47ZBVhZspVebhRCpN7SqrHybis; Path=/; Expires=Tue, 05 Nov 2024 08:05:19 +0330; HttpOnly; SameSite=Strict'
+
+
+// login
+curl --location --request POST 'http://localhost:8082/api/v1/auth/signin?email=steven%40yourselfhosted.com&password=secret' \
+--header 'accept: application/json'
